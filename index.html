@@ -28,13 +28,12 @@
 		<div class="progress-container">
 			<div class="progress-bar">100% выполнено</div>
 		</div>
+		<button onclick="toggleIframe('iframeContainer1')">Показать/Скрыть макет</button>
 		<div class="iframe-container" id="iframeContainer1">
 			<iframe width="800" height="450" class="ifr"
 				src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/K9ZUkJvHREHhP83x3ECi6R/дизайн-сайтов?node-id=25-145&p=f&t=Pw9nc02w0C89HBiS-0"
 				allowfullscreen></iframe>
 		</div>
-		<button onclick="toggleIframe('iframeContainer1')">Показать/Скрыть
-			макет</button>
 	</section>
 	<section id="project2" class="project">
 		<h2>Верстка страницы</h2>
@@ -42,10 +41,10 @@
 		<div class="progress-container">
 			<div class="progress-bar">100% выполнено</div>
 		</div>
-		<div class="iframe-container" id="iframeContainer2"><iframe width="800" height="450" class="ifr"
-				src="project2.html" title="Верстка сайта"></iframe></div><button
-			onclick="toggleIframe('iframeContainer2')">Показать/Скрыть
-			сайт</button>
+		<button onclick="toggleIframe('iframeContainer2')">Показать/Скрыть сайт</button>
+		<div class="iframe-container" id="iframeContainer2">
+			<iframe width="800" height="450" class="ifr" src="project2.html" title="Верстка сайта"></iframe>
+		</div>
 	</section>
 	<section id="project3" class="project">
 		<h2>Публикация на GitHub и Рендер</h2>
@@ -53,10 +52,10 @@
 		<div class="progress-container">
 			<div class="progress-bar">100% выполнено</div>
 		</div>
-		<div class="iframe-container" id="iframeContainer3"><iframe width="800" height="450" class="ifr"
-				src="project3.html" title="GitHub сайт"></iframe></div><button
-			onclick="toggleIframe('iframeContainer3')">Показать/Скрыть
-			сайт</button>
+		<button onclick="toggleIframe('iframeContainer3')">Показать/Скрыть сайт</button>
+		<div class="iframe-container" id="iframeContainer3">
+			<iframe width="800" height="450" class="ifr" src="project3.html" title="GitHub сайт"></iframe>
+		</div>
 	</section>
 	<section id="project4" class="project">
 		<h2>Конструктор сайта</h2>
@@ -65,9 +64,10 @@
 		<div class="progress-container">
 			<div class="progress-bar">100% выполнено</div>
 		</div>
+		<button onclick="toggleIframe('iframeContainer4')">Показать/Скрыть сайт</button>
 		<div class="iframe-container" id="iframeContainer4">
 			<iframe width="800" height="450" class="ifr" src="project4.html" title="Конструктор сайта"></iframe>
-		</div><button onclick="toggleIframe('iframeContainer4')">Показать/Скрыть сайт</button>
+		</div>
 	</section>
 	<script>
 		function toggleIframe(id) {
@@ -102,6 +102,12 @@
 				}
 
 					, 400 + i * 120);
+			});
+		});
+
+		document.addEventListener('DOMContentLoaded', function () {
+			document.querySelectorAll('.iframe-container').forEach(function (el) {
+				el.classList.remove('active');
 			});
 		});
 	</script>

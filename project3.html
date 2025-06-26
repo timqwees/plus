@@ -9,77 +9,55 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="inner-page">
 	<header>
-		<h1 style="font-size:2.2em; letter-spacing:2px; text-shadow:0 6px 32px rgba(24,90,157,0.18);">Публикация на
-			GitHub и Рендер</h1>
+		<h1>Публикация на GitHub и Рендер</h1>
 		<nav><a href="index.html">На главную</a></nav>
 	</header>
 
-
 	<section id="project3" class="project">
-		<h2>Публикация на GitHub Иван:</h2>
-		<div class="description">Размещение проекта на GitHub и настройка Render для публикации в интернете.</div>
-		<div class="progress-container">
-			<div class="progress-bar">100% выполнено</div>
+		<h2>Публикация на GitHub, Иван</h2>
+		<button onclick="toggleIframe('iframeContainer3-1')">Показать/Скрыть сайт</button>
+		<div class="iframe-container" id="iframeContainer3-1">
+			<iframe width="800" height="450" class="ifr" src="https://ivan-nt7u.onrender.com" title="GitHub сайт"
+				allow="fullscreen"></iframe>
 		</div>
-		<div class="iframe-container" id="iframeContainer3">
-			<iframe width="800" height="450" class="ifr" src="ссылка_на_развернутый_сайт" title="GitHub сайт"></iframe>
-		</div>
-		<button onclick="toggleIframe('iframeContainer3')">Показать/Скрыть сайт</button>
 	</section>
 
 	<section id="project3" class="project">
-		<h2>Публикация на GitHub Владимир:</h2>
-		<div class="description">Размещение проекта на GitHub и настройка Render для публикации в интернете.</div>
-		<div class="progress-container">
-			<div class="progress-bar">100% выполнено</div>
+		<h2>Публикация на GitHub, Владимир</h2>
+		<button onclick="toggleIframe('iframeContainer3-2')">Показать/Скрыть сайт</button>
+		<div class="iframe-container" id="iframeContainer3-2">
+			<iframe width="800" height="450" class="ifr" src="https://vlad-n3ba.onrender.com" title="GitHub сайт"
+				allow="fullscreen"></iframe>
 		</div>
-		<div class="iframe-container" id="iframeContainer3">
-			<iframe width="800" height="450" class="ifr" src="https://github.com/timqwees/vlad"
-				title="GitHub сайт"></iframe>
-		</div>
-		<button onclick="toggleIframe('iframeContainer3')">Показать/Скрыть сайт</button>
 	</section>
 
 	<section id="project3" class="project">
-		<h2>Публикация на Даниил:</h2>
-		<div class="description">Размещение проекта на GitHub и настройка Render для публикации в интернете.</div>
-		<div class="progress-container">
-			<div class="progress-bar">100% выполнено</div>
+		<h2>Публикация на GitHub, Даниил</h2>
+		<button onclick="toggleIframe('iframeContainer3-3')">Показать/Скрыть сайт</button>
+		<div class="iframe-container" id="iframeContainer3-3">
+			<iframe width="800" height="450" class="ifr" src="https://dmi-oa95.onrender.com" title="GitHub сайт"
+				allow="fullscreen"></iframe>
 		</div>
-		<div class="iframe-container" id="iframeContainer3">
-			<iframe width="800" height="450" class="ifr" src="https://github.com/timqwees/dmi"
-				title="GitHub сайт"></iframe>
-		</div>
-		<button onclick="toggleIframe('iframeContainer3')">Показать/Скрыть сайт</button>
 	</section>
 
 	<section id="project3" class="project">
-		<h2>Публикация на GitHub Мария:</h2>
-		<div class="description">Размещение проекта на GitHub и настройка Render для публикации в интернете.</div>
-		<div class="progress-container">
-			<div class="progress-bar">100% выполнено</div>
+		<h2>Публикация на GitHub, Мария</h2>
+		<button onclick="toggleIframe('iframeContainer3-4')">Показать/Скрыть сайт</button>
+		<div class="iframe-container" id="iframeContainer3-4">
+			<iframe width="800" height="450" class="ifr" src="https://maria-g38y.onrender.com" title="GitHub сайт"
+				allow="fullscreen"></iframe>
 		</div>
-		<div class="iframe-container" id="iframeContainer3">
-			<iframe width="800" height="450" class="ifr" src="https://github.com/timqwees/maria"
-				title="GitHub сайт"></iframe>
-		</div>
-		<button onclick="toggleIframe('iframeContainer3')">Показать/Скрыть сайт</button>
 	</section>
 
-
 	<section id="project3" class="project">
-		<h2>Публикация на GitHub Ульяна:</h2>
-		<div class="description">Размещение проекта на GitHub и настройка Render для публикации в интернете.</div>
-		<div class="progress-container">
-			<div class="progress-bar">100% выполнено</div>
+		<h2>Публикация на GitHub, Ульяна</h2>
+		<button onclick="toggleIframe('iframeContainer3-5')">Показать/Скрыть сайт</button>
+		<div class="iframe-container" id="iframeContainer3-5">
+			<iframe width="800" height="450" class="ifr" src="https://yla.onrender.com" title="GitHub сайт"
+				allow="fullscreen"></iframe>
 		</div>
-		<div class="iframe-container" id="iframeContainer3">
-			<iframe width="800" height="450" class="ifr" src="https://github.com/timqwees/yla"
-				title="GitHub сайт"></iframe>
-		</div>
-		<button onclick="toggleIframe('iframeContainer3')">Показать/Скрыть сайт</button>
 	</section>
 
 	<script>
@@ -88,22 +66,8 @@
 			container.classList.toggle('active');
 		}
 		document.addEventListener('DOMContentLoaded', () => {
-			const observer = new window.IntersectionObserver((entries) => {
-				entries.forEach(entry => {
-					if (entry.isIntersecting) {
-						entry.target.style.animationPlayState = 'running';
-						observer.unobserve(entry.target);
-					}
-				});
-			}, { threshold: 0.15 });
-			document.querySelectorAll('.project, h2').forEach(el => {
-				el.style.animationPlayState = 'paused';
-				observer.observe(el);
-			});
-			document.querySelectorAll('.progress-bar').forEach((bar, i) => {
-				setTimeout(() => {
-					bar.style.width = '100%';
-				}, 400 + i * 120);
+			document.querySelectorAll('.iframe-container').forEach(function (el) {
+				el.classList.remove('active');
 			});
 		});
 	</script>
