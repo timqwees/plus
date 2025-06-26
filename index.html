@@ -2,115 +2,890 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Итоговый проекты в проектограде</title>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8" />
+	<link rel="icon" href="favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link href="kit/immutable/assets/0.f486509e.css" rel="stylesheet">
+	<link href="kit/immutable/assets/2.5fc37849.css" rel="stylesheet">
+	<link rel="preload" as="font" type="font/woff2"
+		href="kit/immutable/assets/montserrat-cyrillic-wght-normal.637f5453.woff2" crossorigin>
+	<link rel="preload" as="font" type="font/woff2"
+		href="kit/immutable/assets/montserrat-latin-wght-normal.bb2f9008.woff2" crossorigin>
+	<title>Python-марафон для новичков в программировании</title><!-- HEAD_svelte-182kcu6_START -->
+	<meta name="description"
+		content="Записывайся на бесплатный марафон по Python для новичков и узнай на практике, чем занимаются разработчики">
+	<meta property="og:title" content="Python-марафон для новичков в программировании">
+	<meta property="og:description"
+		content="Записывайся на бесплатный марафон по Python для новичков и узнай на практике, чем занимаются разработчики">
+	<meta property="og:image"
+		content="https://landing.javarush.com/global/python-marathon/og-image-jr-python-grlobal.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:site_name" content="JavaRush"><!-- HEAD_svelte-182kcu6_END --><!-- HEAD_svelte-1uzcjdi_START -->
+	<link rel="preconnect" href="https://www.googletagmanager.com">
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<!-- HEAD_svelte-1uzcjdi_END --><!-- HEAD_svelte-1sedeh9_START -->
+	<style data-svelte-h="svelte-1y78zum">
+		:root {
+			--override-site-layout-sidebar-width: 0;
+		}
+	</style><!-- HEAD_svelte-1sedeh9_END -->
 </head>
 
 <body>
-	<header>
-		<h1 style="font-size:2.2em; letter-spacing:2px; text-shadow:0 6px 32px rgba(24,90,157,0.18);">Итоговый проекты в
-			проектограде</h1>
-		<p style="font-size:1.1em; color:#e0eaf1; text-shadow:0 2px 8px rgba(67,206,162,0.12);">Web-бюро (Все о
-			разработке с <span style="color: #deff00;font-weight: 900;">A</span> до <span
-				style="color: #00e7ff;font-weight: 900;">Я</span>)
-		</p>
-	</header>
-	<nav>
-		<a href="#project1"><span>Макет в Фигме</span></a><a href="#project2"><span>Верстка сайта</span></a><a
-			href="#project3"><span>Публикация на GitHub</span></a><a href="#project4"><span>Конструктор сайта</span></a>
-	</nav>
-	<section id="project1" class="project">
-		<h2>Макет в Фигме</h2>
-		<div class="description">Создание дизайна шапки и страниц в Figma - первый шаг к реализации проекта.</div>
-		<div class="progress-container">
-			<div class="progress-bar">100% выполнено</div>
+	<div style="display: contents"> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLLVQ86F"
+				height="0" width="0" title="gtm no script" style="display:none;visibility:hidden"></iframe></noscript>
+		<svg xmlns="http://www.w3.org/2000/svg" class="svelte-1gt6xq8">
+			<symbol id="icon-mobile-panel-open" viewBox="0 0 18 16">
+				<rect x="1" y="1" width="16" height="2" rx="1" fill="white"></rect>
+				<rect x="5" y="7" width="12" height="2" rx="1" fill="white"></rect>
+				<rect x="1" y="13" width="16" height="2" rx="1" fill="white"></rect>
+			</symbol>
+			<symbol id="icon-mobile-panel-close" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="m13.658 2.658-.002-.002a.994.994 0 0 0-1.089-.216.999.999 0 0 0-.324.216L8 6.9 3.757 2.656a.995.995 0 0 0-1.09-.216.996.996 0 0 0-.323.216l-.002.002a.997.997 0 0 0 0 1.412l4.244 4.244-4.244 4.243a.994.994 0 0 0-.216 1.089 1.001 1.001 0 0 0 .216.324l.002.001a.993.993 0 0 0 .901.274.997.997 0 0 0 .512-.274L8 9.728l4.243 4.243a.996.996 0 0 0 1.09.217 1.009 1.009 0 0 0 .323-.217l.002-.001a1.002 1.002 0 0 0 0-1.413L9.414 8.314l4.244-4.244a.999.999 0 0 0 0-1.412z"
+					fill="white"></path>
+			</symbol>
+		</svg>
+		<div class="site svelte-1qdaztx">
+			<div class="header svelte-e6hv75" id="header">
+				<div class="header__container svelte-e6hv75"><a class="header__logo svelte-e6hv75" href="#"
+						target="_blank">
+						<div style="width: 200px;position: relative;"><img
+								style="width: 100%;transform: translateX(-50px);filter: invert(1);" src="/favicon.png"
+								alt="">
+						</div>
+					</a>
+					<div class="header__page-nav svelte-e6hv75">
+						<ul class="page-nav svelte-120vfwd">
+							<li class="page-nav__item svelte-120vfwd"><a class="page-nav__link svelte-120vfwd"
+									rel="external" href="#next_web">Web-бюро</a>
+							</li>
+							<li class="page-nav__item svelte-120vfwd"><a class="page-nav__link svelte-120vfwd"
+									rel="external" href="#next_figma">Figma
+								</a> </li>
+							<li class="page-nav__item svelte-120vfwd"><a class="page-nav__link svelte-120vfwd"
+									rel="external" href="#next_git">Git</a> </li>
+							<li class="page-nav__item svelte-120vfwd"><a class="page-nav__link svelte-120vfwd"
+									rel="external" href="#next_render">Render</a> </li>
+							<li class="page-nav__item svelte-120vfwd"><a class="page-nav__link svelte-120vfwd"
+									rel="external" href="#next_tilda">Tilda</a>
+							</li>
+							<li class="page-nav__item svelte-120vfwd"><a class="page-nav__link svelte-120vfwd"
+									rel="external" href="#next_end">Конец</a>
+							</li>
+						</ul>
+					</div> <button class="mobile-panel-btn svelte-e6hv75"><svg id="icon-mobile-panel-open"
+							viewBox="0 0 18 16" class="svelte-e6hv75">
+							<rect x="1" y="1" width="16" height="2" rx="1" fill="currentColor"></rect>
+							<rect x="5" y="7" width="12" height="2" rx="1" fill="currentColor"></rect>
+							<rect x="1" y="13" width="16" height="2" rx="1" fill="currentColor"></rect>
+						</svg></button>
+				</div>
+			</div>
+
+
+			<section id="about" class="hero-section svelte-12i8fod">
+				<div class="hero-section__container svelte-12i8fod">
+					<div class="hero-info">
+						<div class="hero-event-info svelte-12i8fod">
+							<div class="hero-event-info__item svelte-12i8fod">Проектоград - это круто!</div>
+							<div class="hero-event-info__item svelte-12i8fod">для новичков в программировании</div>
+						</div>
+						<h1 class="hero-title hero-title--ru svelte-12i8fod"><!-- HTML_TAG_START -->Проектоград
+							<span>Путь Web-технологий</span> быстрый старт!<!-- HTML_TAG_END -->
+						</h1>
+						<div class="hero-desc svelte-12i8fod"><!-- HTML_TAG_START -->Наши,
+							невероятные, ученики Web-бюро сделали невозможное! Смогли изучить все
+							професси WEB-IT c 0<!-- HTML_TAG_END -->
+						</div>
+						<div class="hero-pic hero-pic--m svelte-12i8fod"><img class="hero-pic__img svelte-12i8fod"
+								src="kit/immutable/assets/hero-pic-python-mobile.a9210dbb.svg" alt=""></div>
+						<div class="hero-c2a svelte-12i8fod"><a class="btn btn--dark svelte-1d8019j btn--arrow"
+								rel="external" disabled href="#next_web"> <span class="btn__label svelte-1d8019j"><span
+										class="d-only">Мы это сделали! Юхуу! 🎉
+									</span>
+									<span class="t-only">Мы это сделали!</span>
+									<span class="m-only">Мы это сделали!</span></span> </a></div>
+						<div class="hero-event-info svelte-12i8fod">
+							<div class="hero-event-info__item svelte-12i8fod">2 недели</div>
+							<div class="hero-event-info__item svelte-12i8fod">4 готовых проекта</div>
+							<div class="hero-event-info__item svelte-12i8fod">Заработок в сфере</div>
+							<div class="hero-event-info__item svelte-12i8fod">Креативные работы</div>
+						</div>
+					</div>
+					<div class="hero-pic hero-pic--d hero-pic--ru svelte-12i8fod"><img
+							class="hero-pic__img svelte-12i8fod" src="kit/immutable/assets/hero-pic-python.c7d64381.svg"
+							alt=""></div>
+				</div>
+			</section>
+
+
+
+			<!-- start  -->
+
+
+
+			<section id="next_web" class="modern-it-section svelte-knrdrn">
+				<div class="modern-it-section__container svelte-knrdrn">
+					<div class="modern-it-content svelte-knrdrn">
+						<div class="modern-it-head svelte-knrdrn">
+							<div class="section-label svelte-kb2g5n">Карьера в IT - это быстро!</div>
+							<h2 class="section-title section-title--ru svelte-txvtx9"><!-- HTML_TAG_START -->Твои
+								карьерные перспективы в качестве Web‑разработчика<!-- HTML_TAG_END --> </h2>
+							<div class="modern-it-desc svelte-knrdrn"><!-- HTML_TAG_START -->Обладая знаниями
+								из пройденных навыков в бюро, ты можешь выбрать любую
+								специализацию:<!-- HTML_TAG_END --></div>
+						</div>
+						<div class="modern-it-prospects">
+							<div class="job-positions job-positions--ru svelte-knrdrn">
+								<div class="job-position svelte-knrdrn">
+									Верстальщик сайтов<div class="job-position__icon svelte-knrdrn"
+										data-svelte-h="svelte-1ocfb5p">
+										<img class="job-position__emoji svelte-knrdrn"
+											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAN9SURBVHgBrZTPbxtFFMe/sz+8tteu08QkcWPqlPaStEAVAhJCVEVIRI2ogCOI/gtwggOlUiRA4oKEuHHgQiUQIECCChIhqHpABMqhHAqlrZpUafPD2Sauf6zt3Z2Zvtm13bhNrR66q6f9Me995vvevBngAV+s12D99xcOmUNTr0m9v8CYtMDLG0Hl4i9i6YdTyaPXrt83UH49Hlsz62/3T3z4np4cVX/aI2QC/uafjtj87c3EUz9+yWimrbHGdsDG2Evf86X/pivL89ixiwOaRawAUvJIhWZnEd9zsnZ6Yo0+f+0JbJx5dJoe06bh4acvPsfUi+dh92VBSiD8KnEbpFODZFyTMvYR+R7sCeRa8mlZuQDhLiA/BJz5eR7DwwnsLtiwbZ3kCUihQdPJNDz+78lsbvyYs3JvheXSiMbKuPS/g7EDaaR2WCiXAqyvN+E4nGASmyUPhUICfRkT9Yr2EIX1ALrujdKGj1zOgrMhwEyGoXwKgyM2atUAa8sukmkDV67UsH+/jUbNXd0ar90JLDnNc6DiZ3J5zJ3PYfbvGKXGoFOKTR7Hp3MprAZ7UXhYKW9eeOatarEnMJM1b6ZSOtK5SZz+YxXZwYOQ+gBUh8nBo1hYWEVq4ABSfTYo+8t3xt/Vh4tUZMa068MjaWb27SWHOrWeS8XpB7wiRCwPVr+GlatFqidO5F9deX9rfFcNT83OPnfZsDLmwsdLWmDstlyT0tUpNY/aOYZMhurvEz+wsVjdhcbOQ/7c3MTLrhDnXjlyZLFL4czMjGbEEk3Lihm6YcDQdYJpoakeVJcQIjTOOYIggE8W+AG44B/MnDj+blcNCShpwAvIWZCpIN4JjgC8/b9loZ8I393tFkXSXVbbVbZ2p+o5KZWJ1rNtkY+MomjXsM3tgMq5pKgKoFILnxQZtyzseWT0NrB9hzOrjciK2wIDzrxIFW4HE/jJySfw/OHDVEstnECKSLFSp74rFV3cBRyb/O74+o3+x9oKVYBoQef/OouvvvkWnu+FZYigbYXA2X9G3lGJd4D79n1iGXr8jYAnOqD2aqqVrFZrWHec1pjYUvIIWm8OTI6OfzbVAbJ0/Fmw+KDns6h2nZRk2Fddi6IUctFRqXy4SNPpY73eaWyzKS9yQxxbLiaxM1mMmo4aGnp3XUJtdMZy9aJaRp3eXpx6Uafdr22o4Vs8nRI+UlP2vQAAAABJRU5ErkJggg=="
+											width="20" height="21" loading="lazy" alt="Technologist emoji">
+									</div>
+								</div>
+								<div class="job-position svelte-knrdrn">
+									Designer UI<div class="job-position__icon svelte-knrdrn"
+										data-svelte-h="svelte-1740pfd">
+										<img class="job-position__emoji svelte-knrdrn"
+											src="kit/immutable/assets/emoji-smiling-face-with-sunglasses.819294e5.png"
+											width="20" height="21" loading="lazy"
+											alt="Smiling Face with Sunglasses emoji">
+									</div>
+								</div>
+								<div class="job-position svelte-knrdrn">
+									Tilda-Developer<div class="job-position__icon svelte-knrdrn"
+										data-svelte-h="svelte-hnqet4">
+										<img class="job-position__emoji svelte-knrdrn"
+											src="kit/immutable/assets/emoji-file-cabinet.5aef1ebb.png" width="20"
+											height="21" loading="lazy" alt="File Cabinet emoji">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modern-it-salary svelte-knrdrn">
+							<div class="salary-levels svelte-knrdrn">
+								<div class="dev-levels svelte-knrdrn">
+									<div class="dev-level dev-level--senior dev-level--ru svelte-knrdrn">
+										<div class="dev-level__income svelte-knrdrn"><img
+												class="dev-level__income-pic svelte-knrdrn"
+												src="kit/immutable/assets/modern-it-salary.ee389841.svg" width="236"
+												height="137" loading="lazy" alt="Senior Web Developer Salary">
+											<div class="dev-level__income-val svelte-knrdrn">300 000 - 500 000 ₽</div>
+										</div>
+										<div class="dev-level__desc svelte-knrdrn">
+											<div class="dev-level__title svelte-knrdrn"><span class="bold">Senior</span>
+												веб-разработчик
+											</div>
+											<div class="dev-level__period svelte-knrdrn"><!-- HTML_TAG_START -->от 3
+												лет<!-- HTML_TAG_END --></div>
+										</div>
+									</div>
+									<div class="dev-level dev-level--middle dev-level--ru svelte-knrdrn">
+										<div class="dev-level__income svelte-knrdrn">
+											<div class="dev-level__income-val svelte-knrdrn">150 000 - 300 000 ₽</div>
+										</div>
+										<div class="dev-level__desc svelte-knrdrn">
+											<div class="dev-level__title svelte-knrdrn"><span class="bold">Midle</span>
+												веб-разработчик
+											</div>
+											<div class="dev-level__period svelte-knrdrn"><!-- HTML_TAG_START -->от 1
+												года<!-- HTML_TAG_END --></div>
+										</div>
+									</div>
+									<div class="dev-level dev-level--junior dev-level--ru svelte-knrdrn">
+										<div class="dev-level__income svelte-knrdrn">
+											<div class="dev-level__income-val svelte-knrdrn">70 000 - 120 000 ₽</div>
+										</div>
+										<div class="dev-level__desc svelte-knrdrn">
+											<div class="dev-level__title svelte-knrdrn"><span class="bold">Junior</span>
+												веб-разработчик
+											</div>
+											<div class="dev-level__period svelte-knrdrn">
+												<!-- HTML_TAG_START -->начало карьеры<!-- HTML_TAG_END -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section id="next_figma" class="requirements-section svelte-mt8hx7">
+				<div class="requirements-section__container svelte-mt8hx7">
+					<div class="section-label svelte-kb2g5n"><!-- HTML_TAG_START -->Что нужно, чтобы стать
+						разработчиком <!-- HTML_TAG_END --> </div>
+					<h2 class="section-title section-title--ru svelte-txvtx9">
+						<!-- HTML_TAG_START -->Начнем путеществие по всем этапам Web-разработки!
+						<br>Давайте узнаем, какие этапы нужны 🌟 <br> для создания сайта ващей мечты
+						💭<!-- HTML_TAG_END -->
+					</h2>
+					<div class="start-reqs svelte-mt8hx7">
+						<div class="start-req-card start-req-card--desire svelte-mt8hx7"><img
+								class="start-req-card__pic svelte-mt8hx7"
+								src="kit/immutable/assets/req-hero-cat.f2d74c2e.svg" width="156" height="142"
+								loading="lazy" alt="Кот-марафонец">
+							<div class="start-req-card__info">
+								<div class="start-req-card__number svelte-mt8hx7" data-svelte-h="svelte-1wm9sih">01
+								</div>
+								<div class="start-req-card__title svelte-mt8hx7"><!-- HTML_TAG_START -->Твое желание
+									учиться и&nbsp;добиваться результатов:<!-- HTML_TAG_END --></div>
+								<div class="start-req-card__desc svelte-mt8hx7"><!-- HTML_TAG_START -->любой может стать
+									программистом, тебе не нужно быть гением в&nbsp;математике или иметь высшее
+									техническое образование.<!-- HTML_TAG_END --></div>
+							</div>
+						</div>
+						<div class="start-req-card start-req-card--prepare svelte-mt8hx7"><img
+								class="start-req-card__pic svelte-mt8hx7"
+								src="kit/immutable/assets/req-learn-python.a05b542b.svg" width="156" height="142"
+								loading="lazy" alt="Python подготовка">
+							<div class="start-req-card__info">
+								<div class="start-req-card__number svelte-mt8hx7" data-svelte-h="svelte-1yctof0">FIGMA
+								</div>
+								<div class="start-req-card__title svelte-mt8hx7">Все начинаеться с чажечки кофе ☕️ и с
+									создания макета сайта, который в будущем будет в интернете!</div>
+							</div>
+						</div>
+					</div>
+					<div class="reqs-head">
+						<h2 class="section-title section-title--ru svelte-txvtx9">Макет - это наше все! FIGMA, НАЧАЛО!
+						</h2>
+					</div>
+					<div class="reqs" style="padding-top: 2rem;">
+
+
+
+						<div class=" req-card svelte-mt8hx7">
+
+							<!-- CONTENT -->
+
+							<video src="kit/immutable/assets/banner-video.mp4" autoplay loop muted controls
+								style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+							</video>
+
+							<!-- CONTENT FINISH -->
+
+
+						</div>
+
+
+
+					</div>
+				</div>
+			</section>
+
+
+
+			<!-- banner  -->
+
+
+			<section class="it-transition-section svelte-la7r3f">
+				<div class="it-transition-section__container svelte-la7r3f"
+					style="--it-transition-section-bg-image: url(kit/immutable/assets/it-transition-section-bg.59cbaf1b.svg); --it-transition-section-bg-image-mobile: url(kit/immutable/assets/it-transition-section-bg--m.bb686eaf.svg);">
+					<div class="it-transition-title svelte-la7r3f">
+						<h2 class="section-title section-title--ru svelte-txvtx9">С чего начать после создания
+							супер-пупер макетов в FIGMA ?? Хмм...</h2>
+					</div>
+					<div class="it-transition-content it-transition-content--ru svelte-la7r3f">
+						<div class="it-transition-card it-transition-card--duration svelte-la7r3f"><img
+								class="it-transition-card__icon svelte-la7r3f"
+								src="kit/immutable/assets/emoji-graduation-cap--lg.1b5f2128.png" width="64" height="64"
+								loading="lazy" alt="Emoji Graduation Cap">
+							<div class="it-transition-card__desc svelte-la7r3f">
+								<!-- HTML_TAG_START -->Стой, ты ведь не собираешься сразу лепить свой сайт, правда?
+								<span class='bold'>Давай сначала потренируемся на простом примере!</span>
+							</div>
+						</div>
+						<div class="it-transition-card it-transition-card--internship svelte-la7r3f"><img
+								class="it-transition-card__icon svelte-la7r3f"
+								src="kit/immutable/assets/emoji-eyes--lg.f4f8f1a2.png" width="64" height="64"
+								loading="lazy" alt="Emoji Eyes">
+							<div class="it-transition-card__desc svelte-la7r3f">Ох, не хочу больще держать все файлы на
+								компьютере 💻! Оo, придумал, есть же <span class="bold">GitHub</span></div>
+						</div>
+					</div>
+					<div class="it-transition-c2a svelte-la7r3f">
+						<a class="btn btn--dark svelte-1d8019j btn--arrow btn--wide" rel="external" disabled
+							href="#next_git">Поехали дальще!! </a>
+					</div>
+				</div>
+			</section>
+
+			<!-- banner finish -->
+
+
+			<section id="next_git" class="requirements-section svelte-mt8hx7">
+				<div class="requirements-section__container svelte-mt8hx7">
+					<div class="section-label svelte-kb2g5n"><!-- HTML_TAG_START -->Первый старт в
+						Web-бюро<!-- HTML_TAG_END -->
+					</div>
+					<h2 class="section-title section-title--ru svelte-txvtx9">
+						<!-- HTML_TAG_START -->Ну что, давайте узнаем об первых успехах бюро
+						<br>Послушаем об GitHub ☺️<br>И насладимся уютной атмосферой 🥰
+						💭<!-- HTML_TAG_END -->
+					</h2>
+
+					<div class="start-reqs svelte-mt8hx7">
+						<div class="start-req-card start-req-card--desire svelte-mt8hx7"><img
+								class="start-req-card__pic svelte-mt8hx7"
+								src="kit/immutable/assets/req-hero-cat.f2d74c2e.svg" width="156" height="142"
+								loading="lazy" alt="Кот-марафонец">
+							<div class="start-req-card__info">
+								<div class="start-req-card__number svelte-mt8hx7" data-svelte-h="svelte-1wm9sih">02
+								</div>
+								<div class="start-req-card__title svelte-mt8hx7"><!-- HTML_TAG_START -->Важность
+									регулярной практики:<!-- HTML_TAG_END --></div>
+								<div class="start-req-card__desc svelte-mt8hx7"><!-- HTML_TAG_START -->Программирование
+									- это навык, который развивается с практикой. Выделяй хотя бы 30 минут в день на
+									написание кода, и ты увидишь прогресс.<!-- HTML_TAG_END --></div>
+							</div>
+						</div>
+
+
+						<div class="start-req-card start-req-card--prepare svelte-mt8hx7"><img
+								class="start-req-card__pic svelte-mt8hx7"
+								src="kit/immutable/assets/req-learn-python.a05b542b.svg" width="156" height="142"
+								loading="lazy" alt="Git для детей">
+							<div class="start-req-card__info">
+								<div class="start-req-card__number svelte-mt8hx7" data-svelte-h="svelte-1yctof0">GIT -
+									GITHUB
+								</div>
+								<div class="start-req-card__title svelte-mt8hx7">Git - это как волшебный дневник для
+									кода! ✨ <br> Сохраняй свои проекты, возвращайся к старым версиям и работай вместе с
+									друзьями!</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="reqs-head">
+						<h2 class="section-title section-title--ru svelte-txvtx9">Мы начинаем! Git - GitHub, что это за
+							магия? 🪄🦄
+						</h2>
+					</div>
+					<div class="reqs" style="padding-top: 2rem;">
+
+
+
+						<div class=" req-card svelte-mt8hx7">
+
+							<!-- CONTENT -->
+
+							<video src="kit/immutable/assets/banner-video.mp4" autoplay loop muted controls
+								style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+							</video>
+
+							<!-- CONTENT FINISH -->
+
+
+						</div>
+
+
+
+					</div>
+				</div>
+			</section>
+
+
+			<!-- banner start -->
+
+			<section id="how" class="internship-how-section svelte-17tfsgl">
+				<div class="internship-how-section__container svelte-17tfsgl">
+					<div class="internship-how-content svelte-17tfsgl">
+						<div class="internship-how-info svelte-17tfsgl">
+							<div class="section-label svelte-kb2g5n">Погружение в мир разработки</div>
+							<h2 class="section-title section-title--ru svelte-txvtx9"><!-- HTML_TAG_START -->От идей к
+								реальности: как Render помогает воплощать проекты<!-- HTML_TAG_END --> </h2>
+							<div class="internship-how-desc internship-how-desc--ru svelte-17tfsgl">
+								<!-- HTML_TAG_START -->Render - это твой мост между кодом и реальным миром, где идеи
+								превращаются в работающие приложения<!-- HTML_TAG_END -->
+							</div> <!-- HTML_TAG_START -->
+							<ul>
+								<li>Простое развертывание проектов в один клик</li>
+								<li>Мощная инфраструктура для любых масштабов</li>
+								<li>Интеграция с GitHub для автоматического деплоя</li>
+								<li>Поддержка всех популярных языков и фреймворков</li>
+							</ul><!-- HTML_TAG_END -->
+						</div>
+						<img class="internship-how-pic svelte-17tfsgl"
+							src="kit/immutable/assets/chat-bot-ai.b8fcae1c.svg" loading="lazy" alt="Render Platform">
+					</div>
+				</div>
+			</section>
+
+
+			<!-- banner finish -->
+
+
+			<section id="next_render" class="requirements-section svelte-mt8hx7">
+				<div class="requirements-section__container svelte-mt8hx7">
+					<div class="section-label svelte-kb2g5n"><!-- HTML_TAG_START -->Погружение в
+						Render<!-- HTML_TAG_END -->
+					</div>
+					<h2 class="section-title section-title--ru svelte-txvtx9">
+						<!-- HTML_TAG_START -->Render - твой мост между кодом и реальностью
+						<br>Простое развертывание в один клик 🚀<br>Мощная инфраструктура для любых проектов 💪
+						💭<!-- HTML_TAG_END -->
+					</h2>
+
+					<div class="start-reqs svelte-mt8hx7">
+						<div class="start-req-card start-req-card--desire svelte-mt8hx7"><img
+								class="start-req-card__pic svelte-mt8hx7"
+								src="kit/immutable/assets/req-hero-cat.f2d74c2e.svg" width="156" height="142"
+								loading="lazy" alt="Кот-марафонец">
+							<div class="start-req-card__info">
+								<div class="start-req-card__number svelte-mt8hx7" data-svelte-h="svelte-1wm9sih">03
+								</div>
+								<div class="start-req-card__title svelte-mt8hx7"><!-- HTML_TAG_START -->Простота
+									использования:<!-- HTML_TAG_END --></div>
+								<div class="start-req-card__desc svelte-mt8hx7"><!-- HTML_TAG_START -->Развертывай
+									проекты быстро и легко. Один клик - и твое приложение работает!<!-- HTML_TAG_END -->
+								</div>
+							</div>
+						</div>
+
+						<div class="start-req-card start-req-card--prepare svelte-mt8hx7"><img
+								class="start-req-card__pic svelte-mt8hx7"
+								src="kit/immutable/assets/req-learn-python.a05b542b.svg" width="156" height="142"
+								loading="lazy" alt="Render Platform">
+							<div class="start-req-card__info">
+								<div class="start-req-card__number svelte-mt8hx7" data-svelte-h="svelte-1yctof0">RENDER
+								</div>
+								<div class="start-req-card__title svelte-mt8hx7">Мощная платформа для твоих идей! ⚡️
+									<br>
+									Поддержка всех популярных языков и фреймворков
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="reqs-head">
+						<h2 class="section-title section-title--ru svelte-txvtx9">Начни с Render - твой проект уже в
+							сети! 🌐✨
+						</h2>
+					</div>
+					<div class="reqs" style="padding-top: 2rem;">
+
+						<div class=" req-card svelte-mt8hx7">
+							<video src="kit/immutable/assets/banner-video.mp4" autoplay loop muted controls
+								style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+							</video>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- banner start -->
+
+
+			<section class="join-section svelte-b24h0s" style="margin-block: 5rem;">
+				<div class="join-section__container svelte-b24h0s"
+					style="--join-section-bg-image: url(kit/immutable/assets/join-section-bg.9934de9a.svg); --join-section-bg-image-mobile: url(kit/immutable/assets/join-section-bg--m.a3fb115c.svg);">
+					<div class="join-section__content svelte-b24h0s">
+						<div class="section-title section-title--ru svelte-txvtx9"><!-- HTML_TAG_START -->Тильда - это
+							как конструктор LEGO для сайтов! 🧱✨<br>Собирай крутые странички без единой строчки
+							кода!<!-- HTML_TAG_END --><br class="t-only"><br class="d-only">
+							<!-- HTML_TAG_START -->Хочешь стать мастером сайтостроения? Давай учиться вместе!
+							🚀<!-- HTML_TAG_END --> </div>
+						<div class="join-c2a svelte-b24h0s"><a
+								class="btn btn--dark svelte-1d8019j btn--arrow  btn--wide" rel="external" disabled
+								href="#next_tilda"> <span class="btn__label svelte-1d8019j"><span
+										class="d-only">Начнем!</span>
+									<span class="t-only">Начнем!</span> <span class="m-only">Творить!</span></span>
+							</a></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- banner finish -->
+
+
+			<section id="next_tilda" class="requirements-section svelte-mt8hx7">
+				<div class="requirements-section__container svelte-mt8hx7">
+					<div class="section-label svelte-kb2g5n"><!-- HTML_TAG_START -->Тильда - это
+						просто!<!-- HTML_TAG_END -->
+					</div>
+					<h2 class="section-title section-title--ru svelte-txvtx9">
+						<!-- HTML_TAG_START -->Сайты как конструктор LEGO 🧱✨
+						<br>Кликай, перетаскивай, собирай!<br>Код? Не, не слышали 😎
+						💭<!-- HTML_TAG_END -->
+					</h2>
+
+					<div class="start-reqs svelte-mt8hx7">
+						<div class="start-req-card start-req-card--desire svelte-mt8hx7"><img
+								class="start-req-card__pic svelte-mt8hx7"
+								src="kit/immutable/assets/req-hero-cat.f2d74c2e.svg" width="156" height="142"
+								loading="lazy" alt="Кот-марафонец">
+							<div class="start-req-card__info">
+								<div class="start-req-card__number svelte-mt8hx7" data-svelte-h="svelte-1wm9sih">04
+								</div>
+								<div class="start-req-card__title svelte-mt8hx7"><!-- HTML_TAG_START -->Тильда - это
+									просто:<!-- HTML_TAG_END --></div>
+								<div class="start-req-card__desc svelte-mt8hx7"><!-- HTML_TAG_START -->Как конструктор
+									LEGO, только для сайтов! Перетаскивай блоки, настраивай дизайн и получай крутой
+									результат без единой строчки кода.<!-- HTML_TAG_END --></div>
+							</div>
+						</div>
+
+						<div class="start-req-card start-req-card--prepare svelte-mt8hx7"><img
+								class="start-req-card__pic svelte-mt8hx7"
+								src="kit/immutable/assets/req-learn-python.a05b542b.svg" width="156" height="142"
+								loading="lazy" alt="Тильда для чайников">
+							<div class="start-req-card__info">
+								<div class="start-req-card__number svelte-mt8hx7" data-svelte-h="svelte-1yctof0">TILDA
+								</div>
+								<div class="start-req-card__title svelte-mt8hx7">Сайт за вечер? Легко! 🚀 <br>
+									Тильда - это как волшебная палочка для создания сайтов. Просто, быстро, красиво!
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="reqs-head">
+						<h2 class="section-title section-title--ru svelte-txvtx9">Тильда - твой билет в мир веб-дизайна!
+							🎟️✨
+						</h2>
+					</div>
+					<div class="reqs" style="padding-top: 2rem;">
+						<div class=" req-card svelte-mt8hx7">
+							<video src="kit/immutable/assets/banner-video.mp4" autoplay loop muted controls
+								style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+							</video>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ФИНАЛ -->
+
+			<div id="next_end">
+				<section class="why-section svelte-s96dlt">
+					<div class="why-section__container why-section__container--ru svelte-s96dlt">
+						<div class="why-section-head svelte-s96dlt">
+							<div class="section-label svelte-kb2g5n">Итоги смены</div>
+							<h2 class="section-title section-title--ru svelte-txvtx9"><!-- HTML_TAG_START -->Что мы
+								успели за эти 2 недели? Спойлер: это эпично!<!-- HTML_TAG_END --></h2>
+						</div>
+						<div class="reason-card reason-card--first svelte-s96dlt">
+							<div class="reason-card__number svelte-s96dlt" data-svelte-h="svelte-xagsm">01</div>
+							<div class="reason-card__title svelte-s96dlt"><!-- HTML_TAG_START -->Сайты как из
+								конструктора<!-- HTML_TAG_END --></div>
+							<div class="reason-card__desc svelte-s96dlt"><!-- HTML_TAG_START -->Мы освоили Тильду
+								быстрее, чем дети собирают LEGO. Теперь можем создавать сайты, которые выглядят так,
+								будто их делали профессионалы за большие деньги.<!-- HTML_TAG_END --></div>
+						</div>
+						<div class="reason-card reason-card--second svelte-s96dlt">
+							<div class="reason-card__number svelte-s96dlt" data-svelte-h="svelte-4c6oa9">02</div>
+							<div class="reason-card__title svelte-s96dlt"><!-- HTML_TAG_START -->Git - наш новый лучший
+								друг<!-- HTML_TAG_END --></div>
+							<div class="reason-card__desc svelte-s96dlt"><!-- HTML_TAG_START -->Теперь мы знаем, как не
+								потерять код и не сломать всё, что работало. Commit, push, pull - звучит как магическое
+								заклинание, но это наша повседневность.<!-- HTML_TAG_END --></div>
+						</div>
+						<div class="reason-card reason-card--third svelte-s96dlt">
+							<div class="reason-card__number svelte-s96dlt" data-svelte-h="svelte-p2p1b4">03</div>
+							<div class="reason-card__title svelte-s96dlt"><!-- HTML_TAG_START -->Figma - дизайн без
+								границ<!-- HTML_TAG_END --></div>
+							<div class="reason-card__desc svelte-s96dlt"><!-- HTML_TAG_START -->Мы научились создавать
+								макеты, которые заставляют клиентов говорить "Вау!". Теперь мы не просто верстальщики, а
+								настоящие digital-художники.<!-- HTML_TAG_END --></div>
+						</div>
+						<div class="reason-card reason-card--fourth svelte-s96dlt">
+							<div class="reason-card__number svelte-s96dlt" data-svelte-h="svelte-e4xic3">04</div>
+							<div class="reason-card__title svelte-s96dlt"><!-- HTML_TAG_START -->Render - наш первый
+								хостинг<!-- HTML_TAG_END --></div>
+							<div class="reason-card__desc svelte-s96dlt"><!-- HTML_TAG_START -->Ребята создали тестовый
+								шаблон сайта и успешно опубликовали его на Render. Это был наш первый опыт работы с
+								хостингом и деплоем проектов.<!-- HTML_TAG_END --></div>
+						</div>
+						<div class="reason-card reason-card--fifth svelte-s96dlt">
+							<div class="reason-card__number svelte-s96dlt" data-svelte-h="svelte-1j89b4q">05</div>
+							<div class="reason-card__title svelte-s96dlt"><!-- HTML_TAG_START -->4 проекта за 2
+								недели<!-- HTML_TAG_END --></div>
+							<div class="reason-card__desc svelte-s96dlt"><!-- HTML_TAG_START -->Мы сделали больше, чем
+								некоторые за полгода! Теперь в нашем портфолио есть реальные проекты, которые можно
+								показать работодателям.<!-- HTML_TAG_END --></div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<section class="best-choice-section svelte-10vetr6">
+				<div class="best-choice-section__container ">
+					<div id="reviews" class="reviews " style="transform: translatey(-20px);">
+						<h2 class="section-title section-title--ru svelte-txvtx9">Участники Web-бюро:
+							<div class="reviews-list svelte-10vetr6">
+
+
+
+								<div class="review-card review-card--first svelte-10vetr6">
+									<div class="review-card__user svelte-10vetr6"><img
+											class="review-card__avatar svelte-10vetr6"
+											src="kit/immutable/assets/review-avatar-1.15f5a206.jpg" width="100"
+											height="100" loading="lazy" alt="Сергей Морарь">
+										<div class="review-card__bio svelte-10vetr6">
+											<div class="review-card__name svelte-10vetr6">Иван Леонидович</div>
+											<div class="review-card__position svelte-10vetr6">
+												<!-- HTML_TAG_START -->Создал 2 сайта за 2 недели,<br>освоил верстку и
+												основы CSS<!-- HTML_TAG_END -->
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="review-card review-card--second svelte-10vetr6">
+									<div class="review-card__user svelte-10vetr6"><img
+											class="review-card__avatar svelte-10vetr6"
+											src="kit/immutable/assets/review-avatar-2.6f3fce67.jpg" width="100"
+											height="100" loading="lazy" alt="Данил Суетин">
+										<div class="review-card__bio svelte-10vetr6">
+											<div class="review-card__name svelte-10vetr6">Даниил Александрович</div>
+											<div class="review-card__position svelte-10vetr6">
+												<!-- HTML_TAG_START -->Быстро учился на ошибках,<br>освоил Git и
+												работу с Tilda быстрее всех<!-- HTML_TAG_END -->
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="review-card review-card--third svelte-10vetr6">
+									<div class="review-card__user svelte-10vetr6"><img
+											class="review-card__avatar svelte-10vetr6"
+											src="kit/immutable/assets/review-avatar-3.48db7a2a.jpg" width="100"
+											height="100" loading="lazy" alt="Александр Копайгородский">
+										<div class="review-card__bio svelte-10vetr6">
+											<div class="review-card__name svelte-10vetr6">Мария Сергеевна</div>
+											<div class="review-card__position svelte-10vetr6">
+												<!-- HTML_TAG_START -->Создала портфолио из 4 проектов,<br>стала
+												экспертом в Figma<!-- HTML_TAG_END -->
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="review-card review-card--third svelte-10vetr6">
+									<div class="review-card__user svelte-10vetr6"><img
+											class="review-card__avatar svelte-10vetr6"
+											src="kit/immutable/assets/review-avatar-3.48db7a2a.jpg" width="100"
+											height="100" loading="lazy" alt="Александр Копайгородский">
+										<div class="review-card__bio svelte-10vetr6">
+											<div class="review-card__name svelte-10vetr6">Ульяна Александровна</div>
+											<div class="review-card__position svelte-10vetr6">
+												<!-- HTML_TAG_START -->Разработала лендинг страницу,<br> справлялась со
+												всеми работами
+												за раз!<!-- HTML_TAG_END -->
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="review-card review-card--third svelte-10vetr6">
+									<div class="review-card__user svelte-10vetr6"><img
+											class="review-card__avatar svelte-10vetr6"
+											src="kit/immutable/assets/review-avatar-3.48db7a2a.jpg" width="100"
+											height="100" loading="lazy" alt="Александр Копайгородский">
+										<div class="review-card__bio svelte-10vetr6">
+											<div class="review-card__name svelte-10vetr6">Владимир Андреевич</div>
+											<div class="review-card__position svelte-10vetr6">
+												<!-- HTML_TAG_START -->Стал программистом за 1
+												неделю,<br>освоил верстку за пару дней!<!-- HTML_TAG_END -->
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+
+							</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- FOOTER -->
+
+			<style>
+				.footer__container.svelte-1c9ge78 {
+					justify-content: space-between;
+				}
+			</style>
+
+			<div class="footer svelte-1c9ge78">
+				<div class="footer__container svelte-1c9ge78"><a class="footer__logo svelte-1c9ge78" href="#"
+						target="_blank">
+						<div class="site-logo site-logo--header site-logo--jr-white" style="position: relative;"><img
+								src="favicon.png" alt="logo" width="200px">
+						</div>
+					</a>
+					<div class="footer__tagline svelte-1c9ge78">«Строй свое будущие сейчас» © 2025 Проектоград</div>
+				</div>
+			</div>
 		</div>
-		<button onclick="toggleIframe('iframeContainer1')">Показать/Скрыть макет</button>
-		<div class="iframe-container" id="iframeContainer1">
-			<iframe width="800" height="450" class="ifr"
-				src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/K9ZUkJvHREHhP83x3ECi6R/дизайн-сайтов?node-id=25-145&p=f&t=Pw9nc02w0C89HBiS-0"
-				allowfullscreen></iframe>
-		</div>
-	</section>
-	<section id="project2" class="project">
-		<h2>Верстка страницы</h2>
-		<div class="description">Практика верстки шапки сайта с использованием HTML и CSS.</div>
-		<div class="progress-container">
-			<div class="progress-bar">100% выполнено</div>
-		</div>
-		<button onclick="toggleIframe('iframeContainer2')">Показать/Скрыть сайт</button>
-		<div class="iframe-container" id="iframeContainer2">
-			<iframe width="800" height="450" class="ifr" src="project2.html" title="Верстка сайта"></iframe>
-		</div>
-	</section>
-	<section id="project3" class="project">
-		<h2>Публикация на GitHub и Рендер</h2>
-		<div class="description">Размещение проекта на GitHub и настройка Render для публикации в интернете.</div>
-		<div class="progress-container">
-			<div class="progress-bar">100% выполнено</div>
-		</div>
-		<button onclick="toggleIframe('iframeContainer3')">Показать/Скрыть сайт</button>
-		<div class="iframe-container" id="iframeContainer3">
-			<iframe width="800" height="450" class="ifr" src="project3.html" title="GitHub сайт"></iframe>
-		</div>
-	</section>
-	<section id="project4" class="project">
-		<h2>Конструктор сайта</h2>
-		<div class="description">Реализация макета через конструктор сайтов - быстрый и эффективный способ создания
-			веб-страниц.</div>
-		<div class="progress-container">
-			<div class="progress-bar">100% выполнено</div>
-		</div>
-		<button onclick="toggleIframe('iframeContainer4')">Показать/Скрыть сайт</button>
-		<div class="iframe-container" id="iframeContainer4">
-			<iframe width="800" height="450" class="ifr" src="project4.html" title="Конструктор сайта"></iframe>
-		</div>
-	</section>
-	<script>
-		function toggleIframe(id) {
-			const container = document.getElementById(id);
-			container.classList.toggle('active');
+
+
+	</div>
+
+
+	<style lang="scss" data-svelte-h="svelte-rpfbm8">
+		:root {
+			--container-padding-inline-val: 12px;
+			--container-padding-inline: var(--override-container-padding-inline, var(--container-padding-inline-val));
 		}
 
-		// Плавное появление секций и заголовков при прокрутке
-		document.addEventListener('DOMContentLoaded', () => {
-			const observer = new window.IntersectionObserver((entries) => {
-				entries.forEach(entry => {
-					if (entry.isIntersecting) {
-						entry.target.style.animationPlayState = 'running';
-						observer.unobserve(entry.target);
-					}
-				});
+		@media (min-width: 360px) {
+			:root {
+				--container-padding-inline-val: 16px;
 			}
+		}
 
-				, {
-					threshold: 0.15
-				});
+		@media (min-width: 375px) {
+			:root {
+				--container-padding-inline-val: 20px;
+			}
+		}
 
-			document.querySelectorAll('.project, h2').forEach(el => {
-				el.style.animationPlayState = 'paused';
-				observer.observe(el);
-			});
+		@media (min-width: 412px) {
+			:root {
+				--container-padding-inline-val: 25px;
+			}
+		}
 
-			// Анимация прогресс-баров
-			document.querySelectorAll('.progress-bar').forEach((bar, i) => {
-				setTimeout(() => {
-					bar.style.width = '100%';
-				}
+		@media (min-width: 1340px) {
+			:root {
+				--container-padding-inline-val: 30px;
+			}
+		}
 
-					, 400 + i * 120);
-			});
-		});
+		@media (min-width: 1480px) {
+			:root {
+				--container-padding-inline-val: 40px;
+			}
+		}
 
-		document.addEventListener('DOMContentLoaded', function () {
-			document.querySelectorAll('.iframe-container').forEach(function (el) {
-				el.classList.remove('active');
-			});
-		});
-	</script>
+		:root {
+			--mobile-panel-btn-bg-color: rgba(0, 0, 0, 0.1);
+			--mobile-panel-btn-bg-color-active: var(--color-lime);
+			--mobile-panel-btn-bg-color-fixed: var(--color-lime);
+			--mobile-panel-btn-icon-fill-color: var(--color-dark-primary);
+			--mobile-panel-btn-icon-fill-color-active: var(--color-dark-primary);
+			--header-logo-fill-color: #000;
+			--page-nav-link-color: var(--color-dark-primary);
+			--page-nav-link-color-active: var(--color-dark-primary);
+			--page-nav-active-underline-color: #8c4ceb;
+			--page-nav-fixed-link-color: var(--color-light-primary);
+			--page-nav-fixed-link-color-active: var(--color-light-primary);
+			--btn-dark-color: var(--color-light-primary);
+			--btn-dark-hover-color: var(--color-light-primary);
+			--btn-dark-hover-bg: #8c4ceb;
+			--btn-dark-hover-border-color: #8c4ceb;
+			--btn-dark-active-color: var(--color-light-primary);
+			--btn-dark-active-bg: #462676;
+			--btn-dark-active-border-color: #462676;
+			--hero-section-color: var(--color-dark-primary);
+			--hero-title-highlight-color: var(--color-light-primary);
+			--hero-title-highlight-bg-color: #8c4ceb;
+			--hero-section-bg: var(--color-lime);
+			--hero-telegram-note-decor-bg-color: #8c4ceb;
+			--hero-pic-mobile-max-width: max(209px, 67%);
+			--hero-pic-aspect-ratio: 214 / 301;
+			--hero-pic-backdrop-bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1389 1003'%3E%3Cpath d='M91.2162 421.533C144.004 398.362 154.482 293.332 209.397 277.919C236.304 270.361 264.26 283.486 291.807 280.507C324.059 277.016 355.267 254.985 372.672 224.293C455.972 77.3125 831.978 0.172844 1006.16 0.267774C1161 0.268604 1241.21 4.53851 1315 59.9997C1362.56 95.7446 1381.51 139.552 1385.79 170.902C1396.73 250.803 1371.27 331.432 1363.13 412.142C1356.56 477.393 1361.39 543.031 1362.56 608.507C1364.21 700.202 1385.79 812.578 1334.16 881.302C1257 983.999 1063 897.999 978.156 944.293C893.311 990.587 739.873 996.413 708.288 995.105C681.804 994.007 655.22 995.654 628.836 999.266C522 1013.89 428.82 981.373 390.076 944.293C370.613 925.677 353.976 901.997 335.93 881.302C317.883 860.627 298.41 842.934 273.304 836.371C253.685 831.233 233.071 833.854 212.848 833.206C178.139 832.097 149.809 815.989 142.628 776.007C139.612 759.242 140.053 741.895 138.899 724.822C136.454 688.42 120.687 651.365 87.2916 640.694C-45.3136 598.353 -10.9992 466.38 91.1637 421.529L91.2162 421.533Z' fill='%23000'/%3E%3C/svg%3E");
+			--hero-pic-backdrop-mobile-opacity: .07;
+			--hero-pic-backdrop-opacity: .1;
+			--hero-event-info-item-bg-color: rgba(13, 17, 23, .1);
+			--hero-event-info-item-color: var(--color-dark-primary);
+			--hero-event-info-item-main-color: var(--color-light-primary);
+			--hero-event-info-item-main-reveal-bg: #8c4ceb;
+			--hero-pic-backdrop-width: 412%;
+			--hero-pic-backdrop-translate: -13.2% -59.8%;
+			--reason-card-third-bg-color: #5ee29d80;
+			--reason-card-fourth-bg-color: #fdae1e99;
+			--reason-card-fifth-bg-color: #c4d9f6b2;
+			--it-transition-section-bg-color: var(--color-lime);
+			--it-transition-card-duration-bg-color: #c9b7ec;
+			--it-transition-card-internship-bg-color: #5ee29d;
+			--internship-how-desc-max-width: 40ch;
+			--internship-how-desc-max-width--ru: 48ch;
+			--whom-section-bg-color: var(--color-lime);
+			--join-section-color: var(--color-dark-primary);
+			--join-section-bg-color: var(--color-lime);
+		}
+
+		@media (min-width: 1000px) {
+			:root {
+				--hero-section-container-column-gap: 20px;
+				--hero-pic-aspect-ratio: 364 / 507;
+				--hero-pic-width: 364px;
+				--hero-pic-height: 507px;
+				--hero-pic-margin-right: 32px;
+				--hero-pic-margin-top: -25px;
+				--hero-pic-align-items: flex-end;
+				--hero-pic-justify-self: flex-end;
+				--hero-pic-backdrop-width: 1389px;
+				--hero-pic-backdrop-translate: -12% -51.2%;
+			}
+		}
+	</style>
+	<style lang="scss" data-svelte-h="svelte-nedxux">
+		:root {
+			--container-padding-inline-val: 12px;
+			--container-padding-inline: var(--override-container-padding-inline, var(--container-padding-inline-val));
+		}
+
+		@media (min-width: 360px) {
+			:root {
+				--container-padding-inline-val: 16px;
+			}
+		}
+
+		@media (min-width: 375px) {
+			:root {
+				--container-padding-inline-val: 20px;
+			}
+		}
+
+		@media (min-width: 412px) {
+			:root {
+				--container-padding-inline-val: 25px;
+			}
+		}
+
+		@media (min-width: 1340px) {
+			:root {
+				--container-padding-inline-val: 30px;
+			}
+		}
+
+		@media (min-width: 1480px) {
+			:root {
+				--container-padding-inline-val: 40px;
+			}
+		}
+
+		:root {
+			--it-transition-content-ru-columns: 47% 49%;
+			--hero-pic-aspect-ratio: 220 / 292;
+		}
+
+		@media (min-width: 1000px) {
+			:root {
+				--hero-pic-aspect-ratio: 383 / 507;
+				--hero-pic-width: 383px;
+				--hero-pic-height: 507px;
+				--hero-pic-margin-right: 36px;
+				--hero-pic-backdrop-translate: -11% -51.3%;
+			}
+		}
+	</style>
+	</div>
 </body>
 
 </html>
