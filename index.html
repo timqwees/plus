@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Итоговый проекты в проектограде</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1 style="font-size:2.2em; letter-spacing:2px; text-shadow:0 6px 32px rgba(24,90,157,0.18);">Итоговый проекты в
+			проектограде</h1>
+		<p style="font-size:1.1em; color:#e0eaf1; text-shadow:0 2px 8px rgba(67,206,162,0.12);">Web-бюро (Все о
+			разработке с <span style="color: #deff00;font-weight: 900;">A</span> до <span
+				style="color: #00e7ff;font-weight: 900;">Я</span>)
+		</p>
+	</header>
+	<nav>
+		<a href="#project1"><span>Макет в Фигме</span></a><a href="#project2"><span>Верстка сайта</span></a><a
+			href="#project3"><span>Публикация на GitHub</span></a><a href="#project4"><span>Конструктор сайта</span></a>
+	</nav>
+	<section id="project1" class="project">
+		<h2>Макет в Фигме</h2>
+		<div class="description">Создание дизайна шапки и страниц в Figma - первый шаг к реализации проекта.</div>
+		<div class="progress-container">
+			<div class="progress-bar">100% выполнено</div>
+		</div>
+		<div class="iframe-container" id="iframeContainer1">
+			<iframe width="800" height="450" class="ifr"
+				src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/K9ZUkJvHREHhP83x3ECi6R/дизайн-сайтов?node-id=25-145&p=f&t=Pw9nc02w0C89HBiS-0"
+				allowfullscreen></iframe>
+		</div>
+		<button onclick="toggleIframe('iframeContainer1')">Показать/Скрыть
+			макет</button>
+	</section>
+	<section id="project2" class="project">
+		<h2>Верстка страницы</h2>
+		<div class="description">Практика верстки шапки сайта с использованием HTML и CSS.</div>
+		<div class="progress-container">
+			<div class="progress-bar">100% выполнено</div>
+		</div>
+		<div class="iframe-container" id="iframeContainer2"><iframe width="800" height="450" class="ifr"
+				src="project2.html" title="Верстка сайта"></iframe></div><button
+			onclick="toggleIframe('iframeContainer2')">Показать/Скрыть
+			сайт</button>
+	</section>
+	<section id="project3" class="project">
+		<h2>Публикация на GitHub и Рендер</h2>
+		<div class="description">Размещение проекта на GitHub и настройка Render для публикации в интернете.</div>
+		<div class="progress-container">
+			<div class="progress-bar">100% выполнено</div>
+		</div>
+		<div class="iframe-container" id="iframeContainer3"><iframe width="800" height="450" class="ifr"
+				src="project3.html" title="GitHub сайт"></iframe></div><button
+			onclick="toggleIframe('iframeContainer3')">Показать/Скрыть
+			сайт</button>
+	</section>
+	<section id="project4" class="project">
+		<h2>Конструктор сайта</h2>
+		<div class="description">Реализация макета через конструктор сайтов - быстрый и эффективный способ создания
+			веб-страниц.</div>
+		<div class="progress-container">
+			<div class="progress-bar">100% выполнено</div>
+		</div>
+		<div class="iframe-container" id="iframeContainer4">
+			<iframe width="800" height="450" class="ifr" src="project4.html" title="Конструктор сайта"></iframe>
+		</div><button onclick="toggleIframe('iframeContainer4')">Показать/Скрыть сайт</button>
+	</section>
+	<script>
+		function toggleIframe(id) {
+			const container = document.getElementById(id);
+			container.classList.toggle('active');
+		}
+
+		// Плавное появление секций и заголовков при прокрутке
+		document.addEventListener('DOMContentLoaded', () => {
+			const observer = new window.IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.style.animationPlayState = 'running';
+						observer.unobserve(entry.target);
+					}
+				});
+			}
+
+				, {
+					threshold: 0.15
+				});
+
+			document.querySelectorAll('.project, h2').forEach(el => {
+				el.style.animationPlayState = 'paused';
+				observer.observe(el);
+			});
+
+			// Анимация прогресс-баров
+			document.querySelectorAll('.progress-bar').forEach((bar, i) => {
+				setTimeout(() => {
+					bar.style.width = '100%';
+				}
+
+					, 400 + i * 120);
+			});
+		});
+	</script>
+</body>
+
+</html>

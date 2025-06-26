@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Верстка страницы</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1 style="font-size:2.2em; letter-spacing:2px; text-shadow:0 6px 32px rgba(24,90,157,0.18);">Верстка страницы
+		</h1>
+		<nav><a href="index.html">На главную</a></nav>
+	</header>
+
+	<section id="project2" class="project">
+		<h2>Верстка страницы, Иван:</h2>
+		<div class="description">Практика верстки шапки сайта с использованием HTML и CSS.</div>
+		<div class="progress-container">
+			<div class="progress-bar">100% выполнено</div>
+		</div>
+		<div class="iframe-container" id="iframeContainer2">
+			<iframe width="800" height="450" class="ifr" src="ссылка_на_тестовый_сайт" title="Верстка сайта"></iframe>
+		</div>
+		<button onclick="toggleIframe('iframeContainer2')">Показать/Скрыть сайт</button>
+	</section>
+
+	<section id="project2" class="project">
+		<h2>Верстка страницы, Владимир:</h2>
+		<div class="description">Практика верстки шапки сайта с использованием HTML и CSS.</div>
+		<div class="progress-container">
+			<div class="progress-bar">100% выполнено</div>
+		</div>
+		<div class="iframe-container" id="iframeContainer2">
+			<iframe width="800" height="450" class="ifr" src="ссылка_на_тестовый_сайт" title="Верстка сайта"></iframe>
+		</div>
+		<button onclick="toggleIframe('iframeContainer2')">Показать/Скрыть сайт</button>
+	</section>
+
+	<section id="project2" class="project">
+		<h2>Верстка страницы, Даниил:</h2>
+		<div class="description">Практика верстки шапки сайта с использованием HTML и CSS.</div>
+		<div class="progress-container">
+			<div class="progress-bar">100% выполнено</div>
+		</div>
+		<div class="iframe-container" id="iframeContainer2">
+			<iframe width="800" height="450" class="ifr" src="ссылка_на_тестовый_сайт" title="Верстка сайта"></iframe>
+		</div>
+		<button onclick="toggleIframe('iframeContainer2')">Показать/Скрыть сайт</button>
+	</section>
+
+	<section id="project2" class="project">
+		<h2>Верстка страницы Мария:</h2>
+		<div class="description">Практика верстки шапки сайта с использованием HTML и CSS.</div>
+		<div class="progress-container">
+			<div class="progress-bar">100% выполнено</div>
+		</div>
+		<div class="iframe-container" id="iframeContainer2">
+			<iframe width="800" height="450" class="ifr" src="ссылка_на_тестовый_сайт" title="Верстка сайта"></iframe>
+		</div>
+		<button onclick="toggleIframe('iframeContainer2')">Показать/Скрыть сайт</button>
+	</section>
+
+	<section id="project2" class="project">
+		<h2>Верстка страницы Ульяна:</h2>
+		<div class="description">Практика верстки шапки сайта с использованием HTML и CSS.</div>
+		<div class="progress-container">
+			<div class="progress-bar">100% выполнено</div>
+		</div>
+		<div class="iframe-container" id="iframeContainer2">
+			<iframe width="800" height="450" class="ifr" src="ссылка_на_тестовый_сайт" title="Верстка сайта"></iframe>
+		</div>
+		<button onclick="toggleIframe('iframeContainer2')">Показать/Скрыть сайт</button>
+	</section>
+
+
+	<script>
+		function toggleIframe(id) {
+			const container = document.getElementById(id);
+			container.classList.toggle('active');
+		}
+		document.addEventListener('DOMContentLoaded', () => {
+			const observer = new window.IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.style.animationPlayState = 'running';
+						observer.unobserve(entry.target);
+					}
+				});
+			}, { threshold: 0.15 });
+			document.querySelectorAll('.project, h2').forEach(el => {
+				el.style.animationPlayState = 'paused';
+				observer.observe(el);
+			});
+			document.querySelectorAll('.progress-bar').forEach((bar, i) => {
+				setTimeout(() => {
+					bar.style.width = '100%';
+				}, 400 + i * 120);
+			});
+		});
+	</script>
+</body>
+
+</html>
